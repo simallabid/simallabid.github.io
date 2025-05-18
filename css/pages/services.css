@@ -1,0 +1,171 @@
+.subscription {
+  padding: 64px;
+
+  background-color: var(--primary-color);
+  background-image: url('../../assets/subscribe_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  flex-direction: column;
+  overflow: hidden;
+} /* Subscription section: background, padding, layout */
+
+.subscription h2 {
+  font-size: 88px;
+  font-family: var(--playfair-display);
+  font-weight: 600;
+  line-height: 123px;
+
+  color: #fff;
+  text-align: center;
+}/* Large heading styles in subscription */
+
+.subscription p {
+  font-size: 18px;
+  font-family: var(--plus-jakarta-sans);
+  font-weight: 300;
+  line-height: 36px;
+
+  margin-top: 32px;
+
+  color: rgba(255, 255, 255, 0.8);
+}/* Paragraph styles in subscription */
+
+.subscription__form {
+  min-width: 480px;
+  margin-top: 40px;
+
+  padding: 14px 14px 14px 24px;
+
+  display: flex;
+  gap: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 46px;
+}/* Email subscription form container with flex layout and rounded border */
+
+.subscription__form input {
+  flex: 1;
+
+  font-size:  16px;
+  font-weight: 400px;
+  font-family: var(--plus-jakarta-sans);
+
+  color: #fff;
+  opacity: 0.5;
+
+  background: transparent;
+  border: none;
+  outline: none;
+}/* Input field styling inside subscription form */
+
+.subscription__form input::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}/* Placeholder text styling */
+
+.service-foods__title {
+  font-size: 56px;
+  font-family: var(--playfair-display);
+  font-weight: 600;
+  line-height: 78px;
+  color: #fff;
+  text-align: center;
+}/* Title for service foods section */
+
+.service-foods__catalogue {
+  margin-top: 64px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 56px;
+}/* Catalogue container: flexbox grid of cards */
+
+.service-foods__card {
+  padding: 38px;
+  min-width: 260px;
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}/* Individual service food card styling: padding, background, border radius */
+
+.service-foods__card-image {
+  width: 110px;
+  height: 84px;
+  object-fit: contain;
+}/* Image inside service food card */
+
+.service-foods__card-title {
+  margin-top: 47px;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: var(--playfair-display);
+  color: #fff;
+  text-align: center;
+}/* Title text inside service food card */
+
+.service-foods__card-details {
+  width: 100%;
+  margin-top: 32px;
+}/* Card details container */
+
+.service-foods__card-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}/* Card rating layout with star icons and text */
+
+.service-foods__card-rating img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}/* Rating icon images */
+
+.service-foods__card-rating p {
+  font-size: 20px; 
+  font-weight: 300;
+  font-family: var(--plus-jakarta-sans);
+  color: #fff;
+}/* Rating text */
+
+.service-foods__card-price {
+  font-size: 20px; 
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  color: #fff;
+}/* Price text styling */
+
+.hero-content__buttons {
+  margin: 41px 0 0 41px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+}/* content buttons container */
+
+.hero-content__order-button {
+  padding: 20px;
+  border-radius: 36px;
+  min-width: 212px;
+  outline: none;
+  border: none;
+  background: var(--secondary-color);
+
+  cursor: pointer;
+
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}/* Primary order button style */

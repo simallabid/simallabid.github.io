@@ -1,0 +1,70 @@
+/* Main navigation container */
+.header__nav {
+  display: flex;
+  overflow: hidden; /* Prevents content spill outside container */
+}
+
+/* Logo section (left side of header) */
+.header__logo {
+  flex: 1; /* Takes up one part of the header space */
+  display: flex;
+  position: relative; /* For positioning the overlay */
+  padding: 20px;
+}
+
+/* Colored background behind the logo */
+.header__logo-overlay {
+  position: absolute;
+  inset: 0; /* Fills the parent */
+  width: 100%;
+  background-color: var(--primary-color);
+  z-index: -1; /* Places overlay behind logo text */
+}
+
+/* Logo text styling */
+.header__logo h4 {
+  padding-left: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: var(--playfair-display);
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* Main menu for desktop + shared with mobile menu */
+.header__menu, 
+.header__menu-mobile {
+  padding: 20px;
+  flex: 1.236; /* Slightly more than logo's flex */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 64px; /* Space between items */
+  list-style: none; /* Removes bullets from list items */
+}
+
+/* Each list item (menu link) */
+.header__menu li {
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  color: var(--secondary-color);
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+/* Icons (like cart or user icon) inside menu items */
+.header__menu li img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain; /* Maintains aspect ratio */
+}
+
+/* Mobile-specific menu (hidden by default) */
+.header__menu-mobile {
+  display: none; /* Only shown in responsive views */
+  gap: 20px;
+  position: relative; /* For placing toggles/icons if needed */
+}

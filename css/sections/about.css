@@ -1,0 +1,92 @@
+/* Container for the About Us section */
+.about-us {
+  display: flex; 
+  min-height: 720px; 
+  overflow: hidden; 
+}
+
+/* Left side: image container */
+.about-us__image {
+  flex: 1; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; /* Center content vertically */
+
+  background: var(--color-white); /
+
+}
+
+/* Inner divs inside image container (for each image block) */
+.about-us__image div {
+  padding: 32px 64px; /* Spacing inside each image container */
+
+  flex: 1; 
+  display: flex;
+  align-items: center; /* Vertically center content */
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; /* Scale image to fit container */
+}
+
+/* Specific styling for the first sushi image container */
+.about-us__image-sushi3 {
+  border-bottom: 8px solid var(--color-creamson); /* Thick crimson bottom border */
+
+  background-image: url("../../assets/about_bg1.png"); /* Background image */
+}
+
+/* Specific styling for the second sushi image container */
+.about-us__image-sushi2 {
+  background-image: url("../../assets/about_bg2.png"); /* Background image */
+}
+
+/* Size for sushi3 image inside container */
+.about-us__image-sushi3 img {
+  width: 225px;
+  height: 200px;
+}
+
+/* Size for sushi2 image inside container */
+.about-us__image-sushi2 img {
+  width: 240px;
+  height: 160px;
+}
+
+/* Button positioned on the right side of the image container */
+.about-us__button {
+  position: absolute;
+  right: 0; /* Align to the right edge */
+
+  padding: 12px 32px; /* Padding inside the button */
+  min-height: 64px; /* Minimum button height */
+
+  background: var(--secondary-color); /* Button background color */
+  border-radius: 32px 0 0 32px; /* Rounded left corners */
+  border: 0;
+  outline: 0;
+
+  color: #fff; /* Text color */
+  font-family: var(--plus-jakarta-sans);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Image inside the button */
+.about-us__button img {
+  object-fit: contain; /* Maintain aspect ratio */
+  margin-left: 32px; /* Space between text and image */
+}
+
+/* Right side: content container */
+.about-us__content {
+  padding: 64px; /* Padding inside the content area */
+
+  flex: 1; /* Takes equal space as image */
+  display: flex;
+  justify-content: center; /* Center vertically */
+  flex-direction: column; /* Stack content vertically */
+}

@@ -1,0 +1,69 @@
+/* Footer container styling */
+.footer {
+  width: 100%; /* Full width */
+  padding: 20px 40px; /* Padding inside footer */
+  background: var(--color-white); /* White background */
+
+  flex-wrap: wrap; /* Allows items to wrap if needed */
+  gap: 20px; /* Gap between flex items */
+
+  overflow: hidden; /* Prevent content overflow */
+}
+
+/* Footer logo text styling */
+.footer__logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: var(--playfair-display);
+  text-transform: uppercase; /* Uppercase letters */
+  color: var(--secondary-color);
+
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Highlight part of the logo text with primary color */
+.footer__logo span {
+  color: var(--primary-color);
+}
+
+/* Footer navigation lists styling */
+.footer ul {
+  list-style: none; /* Remove default bullet points */
+
+  display: flex; /* Horizontal layout */
+  flex-wrap: wrap; /* Wrap items if needed */
+  flex-direction: row; /* Row direction */
+  gap: 64px; /* Space between list items */
+}
+
+/* Reduce gap on the last list for tighter spacing */
+.footer ul:last-child {
+  gap: 32px;
+}
+
+/* Individual footer navigation list items */
+.footer__nav li {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  text-transform: uppercase;
+  color: var(--secondary-color);
+
+  cursor: pointer; /* Pointer cursor for interaction */
+}
+
+/* Social icons list items: circular buttons */
+.footer__social li {
+  width: 42px;
+  height: 42px;
+
+  background-color: var(--secondary-color); /* Background color */
+  border-radius: 100%; /* Makes circle */
+}
+
+/* Social icon images inside the buttons */
+.footer__social li img {
+  width: 45%; /* Scales icon smaller inside the circle */
+  height: 45%;
+  object-fit: contain; /* Maintain aspect ratio */
+}

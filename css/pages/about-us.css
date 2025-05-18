@@ -1,0 +1,295 @@
+/* ======= ABOUT US SECTION ======= */
+.about-us {
+  display: flex;                 /* Use flexbox for layout */
+  min-height: 720px;            
+  overflow: hidden;              /* Hide overflow content */
+}
+
+.about-us__image {
+  flex: 1;                      /* Take equal space */
+  display: flex;
+  flex-direction: column;      
+  justify-content: center;       /* Center children vertically */
+  background: var(--color-white);
+  position: relative;            /* For absolutely positioned child elements */
+}
+
+.about-us__image div {
+  padding: 32px 64px;           /* Padding inside image container */
+  flex: 1;                     
+  display: flex;
+  align-items: center;          /* Vertically center content */
+  background-position: center;  
+  background-repeat: no-repeat; /* Prevent image repeat */
+  background-size: contain;     /* Scale background image to fit */
+}
+
+.about-us__image-sushi3 {
+  border-bottom: 8px solid var(--color-creamson); /* Thick colored bottom border */
+  background-image: url("../../assets/about_bg1.png"); 
+}
+
+.about-us__image-sushi2 {
+  background-image: url("../../assets/about_bg2.png"); 
+}
+
+/* Specific image sizing inside sushi image containers */
+.about-us__image-sushi3 img {
+  width: 225px;
+  height: 200px;
+}
+
+.about-us__image-sushi2 img {
+  width: 240px;
+  height: 160px;
+}
+
+/* Button inside about-us image container */
+.about-us__button {
+  position: absolute;           /* Positioned relative to parent */
+  right: 0;                    
+  padding: 12px 32px;          /* Inner spacing */
+  min-height: 64px;          
+  background: var(--secondary-color); 
+  border-radius: 32px 0 0 32px; /* Rounded left corners */
+  border: 0;                  
+  outline: 0;               
+  color: #fff;                 /* White text */
+  font-family: var(--plus-jakarta-sans);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  cursor: pointer;             /* Pointer cursor on hover */
+}
+
+/* Image inside the button, aligned with margin */
+.about-us__button img {
+  object-fit: contain;
+  margin-left: 32px;
+}
+
+/* Content area for about-us section */
+.about-us__content {
+  padding: 64px;         
+  flex: 1;                    /* Take equal space */
+  display: flex;
+  justify-content: center;     
+  flex-direction: column;      /* Stack children vertically */
+}
+
+
+/* ======= TEAM SECTION ======= */
+.chefs {
+  padding: 5rem 2rem;           /* Large padding around the section */
+  background: url("../../assets/subscribe_bg.png"); 
+  text-align: center;         
+  position: relative;           /* To position pseudo elements */
+}
+
+/* Decorative background overlay for section with low opacity */
+.cute-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;                    /* Cover the entire parent */
+  background: url("../../assets/about_bg1.png"), url("../../assets/about_bg2.png");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-size: 300px, 300px;
+  opacity: 0.2;                /* Low opacity for subtle effect */
+  z-index: 0;                  /* Behind content */
+}
+
+/* Headings and paragraphs styled with white text, above overlay */
+.chefs h2,
+.chefs p {
+  color: #fff;
+  position: relative;          /* Ensure text is above overlay */
+  z-index: 1;
+}
+
+/* Flex container for chef cards with wrapping and gap */
+.chefs__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;     /* Center horizontally */
+  gap: 2rem;                 
+  margin-top: 3rem;            /* Spacing above list */
+  position: relative;
+  z-index: 1;
+}
+
+/* Individual chef profile cards */
+.chef-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 2rem;       
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Soft shadow */
+  transition: transform 0.3s ease; /* Smooth hover transform */
+}
+
+/* Hover effect: lift card slightly */
+.chef-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Chef profile images styled as circles with border and shadow */
+.chef-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;          
+  border: 4px solid #fff;      
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Chef name styling */
+.chef-card h4 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: var(--secondary-color);
+}
+
+/* Chef description text */
+.chef-card p {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  line-height: 1.5;
+  padding: 0 0.5rem;
+}
+
+
+/* ======= CUTE CORE VALUES SECTION ======= */
+.values {
+  padding: 5rem 2rem;
+  background-color: var(--color-creamson);
+  background-image: url(../../assets/about_bg2.png);
+}
+
+.values__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Individual core value cards */
+.value {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  max-width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+/* Lift card on hover */
+.value:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon in core value card */
+.value__icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Core value heading */
+.value h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #d35400; /* Orange/red accent */
+}
+
+/* Core value description */
+.value p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+
+/* ======= TESTIMONIALS SECTION ======= */
+.testimonials {
+  padding: 8rem 2rem;
+  background-color: var(--primary-color);
+  background-image: url("/assets/about_bg1.png"); /* Background image */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;      /* Cover entire section */
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;            /* Hide overflow for animations */
+}
+
+/* Testimonial section heading */
+.testimonials h2 {
+  color: #fff;                /* White text */
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-family: var(--playfair-display);
+}
+
+/* Container for slider overflow */
+.testimonials__slider-wrapper {
+  overflow: hidden;           /* Hide horizontal overflow */
+  width: 100%;
+}
+
+/* Flex container for testimonial cards with scrolling animation */
+.testimonials__wrapper {
+  display: flex;
+  gap: 2.5rem;                /* Space between cards */
+  animation: scrollTestimonial 40s linear infinite; /* Infinite horizontal scroll */
+  width: max-content;         /* Width based on content */
+  padding-bottom: 2rem;      
+}
+
+/* Individual testimonial cards */
+.testimonial-card {
+  min-width: 320px;
+  max-width: 320px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 32px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  color: var(--secondary-color);
+  font-family: var(--plus-jakarta-sans);
+  flex-shrink: 0;             /* Prevent shrinking in flex container */
+  transition: transform 0.3s ease;
+}
+
+/* Scale up slightly on hover */
+.testimonial-card:hover {
+  transform: scale(1.03);
+}
+
+/* Text color override inside cards */
+.testimonial-card p,
+.testimonial-card h4 {
+  color: var(--secondary-color);
+}
+
+/* Testimonial paragraph styling */
+.testimonial-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+/* Testimonial author/name styling */
+.testimonial-card h4 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+
+/* ======= SHARED UTILITIES ======= */
+.center-text {
+  text-align: center;         /* Utility class for center alignment */
+}
