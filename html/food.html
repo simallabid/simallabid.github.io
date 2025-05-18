@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/image/sushi.png" />
+    <link rel="stylesheet" href="/css/style.css"> <!-- Custom CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" /> <!-- AOS (Animate on Scroll) CSS library -->
+    <title>Sushiman</title>
+    
+</head>
+<body>
+    <header>
+      <nav class="header__nav">
+        <div class="header__logo">
+          <h4 data-aos="fade-down">Sushiman</h4>
+          <div class="header__logo-overlay"></div>
+        </div>
+
+        <ul class="header__menu" data-aos="fade-down"> <!-- Header navigation bar -->
+            <li>
+            <a href="/html/index.html">Home</a>
+          </li>
+          <li>
+            <a href="/html/menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="/html/food.html">Food</a>
+          </li>
+          <li>
+            <a href="/html/about-us.html">About Us</a>
+          </li>
+          <li>
+            <a href="/html/services.html">Services</a>
+          </li>
+          
+          <li>
+            <img src="/assets/search.svg" alt="search" />
+          </li>
+        </ul>
+
+        <ul class="header__menu-mobile" data-aos="fade-down">
+          <li>
+            <img src="/assets/menu.svg" alt="menu" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="trending"> <!-- Main section for trending sushi and drinks -->
+        <section class="trending-sushi"> <!-- First trending sushi set -->
+            <div class="trending__content" data-aos="fade-right">
+            <p class="sushi__subtitle">What’s Trending / トレンド</p>
+            <h3 class="sushi__title">Perfect Starter Sashimi & Nigiri:</h3>
+            <p class="sushi__description">A beautifully arranged sushi platter featuring a variety of fresh, flavorful selections perfect for any sushi lover.</p>
+
+            <ul class="trending__list flex-between"> <!-- List of features -->
+                <!-- Each item includes an icon and a description -->
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>3 pieces of Salmon Sashimi</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>3 pieces of Nigiri (Salmon, Tuna, Tempura Shrimp)</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>Side of Wasabi</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>Traditional Soy Dipping Sauce</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/star.svg" alt="star">
+                    </div>
+                    <p>4.7</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/dollar-1-svgrepo-com.svg" alt="dollar-sign">
+                    </div>
+                    <p>$25.00</p>
+                </li>
+            </ul>
+            <div class="trending-content__buttons flex-center"> <!-- Order button -->
+                    <button class="trending-content__order-button">Order Now</button>
+            </div>
+        </div>
+
+        <!-- Sushi image and arrows -->
+        <div class="trending__image flex-center">
+            <img src="/assets/sushi-dish.png" alt="sushi-dish" data-aos="fade-left">
+
+            <div class="trending__arrow trending__arrow-left">
+                <img src="/assets/arrow-vertical.svg" alt="arrow-verticle">
+            </div>
+
+            <div class="trending__arrow trending__arrow-bottom">
+                <img src="/assets/arrow-horizontal.svg" alt="arrow-horizontal">
+            </div>
+
+        </div>
+        </section>
+
+        <section class="trending-drinks"> <!--sushi sections that follow the same structure -->
+
+            <div class="trending__image flex-center">
+                <img src="/assets/sushi-dish-2.png" alt="sushi-dish-2" data-aos="fade-right">
+
+            <div class="trending__arrow trending__arrow-top">
+                <img src="/assets/arrow-horizontal.svg" alt="arrow-horizontal">
+            </div>
+
+            <div class="trending__arrow trending__arrow-right">
+                <img src="/assets/arrow-vertical.svg" alt="arrow-vertical">
+            </div>
+
+        </div>
+
+        <div class="trending__content" data-aos="fade-left"> <!-- Section: Chef’s Pick Deluxe Nigiri & Gunkan Set -->
+
+            <p class="sushi__subtitle">What’s Trending / トレンド</p>
+            <h3 class="sushi__title">Chef’s Pick Deluxe Nigiri & Gunkan Set:</h3>
+            <p class="sushi__description">An indulgent assortment of nigiri and gunkan sushi, served fresh on a traditional leaf for an authentic Japanese dining experience.</p>
+
+            <ul class="trending__list flex-between">
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>3 pieces of Nigiri Sushi (Salmon, Tuna, Ebi)</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>3 pieces of Gunkan Maki (Salmon Roe, Spicy Mayo, Crab Mix)</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>Fresh Salmon Sashimi topping</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>Garnished with Leaf Greens</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/star.svg" alt="star">
+                    </div>
+                    <p>4.9</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/dollar-1-svgrepo-com.svg" alt="dollar-sign">
+                    </div>
+                    <p>$28.00</p>
+                </li>
+            </ul>
+            <div class="trending-content__buttons flex-center">
+                    <button class="trending-content__order-button">Order Now</button>
+            </div>
+        </div>
+
+    
+        </section>
+
+    </section>
+
+    <section class="trending">
+        <section class="trending-sushi"> <!-- Section: House Favorite: Sushi Deluxe Platter -->
+            <div class="trending__content" data-aos="fade-right">
+            <p class="sushi__subtitle">What’s Trending / トレンド</p>
+            <h3 class="sushi__title">House Favorite: Sushi Deluxe Platter</h3>
+            <p class="sushi__description">A customer favorite and one of our top-ordered dishes — perfect for sharing or indulging solo if you're hungry! Serves 2 comfortably.</p>
+
+            <ul class="trending__list flex-between">
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>Nigiri Variety — Salmon, tuna, shrimp, and tamago over seasoned rice.</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>Maki Rolls — A mix of fresh seafood and veggie rolls.</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>Gunkan Delights — Rich tuna and salmon roe served gunkan-style.</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>Fresh Cuts — Sashimi-style slices of premium salmon and tuna.</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/star.svg" alt="star">
+                    </div>
+                    <p>4.6</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/dollar-1-svgrepo-com.svg" alt="dollar-sign">
+                    </div>
+                    <p>$30.00</p>
+                </li>
+            </ul>
+            <div class="trending-content__buttons flex-center">
+                    <button class="trending-content__order-button">Order Now</button>
+            </div>
+        </div>
+
+        <div class="trending__image flex-center">
+            <img src="/assets/sushi-dish-3.png" alt="sushi-dish-3" data-aos="fade-left">
+
+            <div class="trending__arrow trending__arrow-left">
+                <img src="/assets/arrow-vertical.svg" alt="arrow-verticle">
+            </div>
+
+            <div class="trending__arrow trending__arrow-bottom">
+                <img src="/assets/arrow-horizontal.svg" alt="arrow-horizontal">
+            </div>
+
+        </div>
+        </section>
+
+        <section class="trending-drinks">
+
+            <div class="trending__image flex-center">
+                <img src="/assets/sushi-dish-4.png" alt="sushi-dish-4" data-aos="fade-right">
+
+            <div class="trending__arrow trending__arrow-top">
+                <img src="/assets/arrow-horizontal.svg" alt="arrow-horizontal">
+            </div>
+
+            <div class="trending__arrow trending__arrow-right">
+                <img src="/assets/arrow-vertical.svg" alt="arrow-vertical">
+            </div>
+
+        </div>
+
+        <div class="trending__content" data-aos="fade-left"> <!-- Section: Japanese Culinary Adventure -->
+            <p class="sushi__subtitle">What’s Trending / トレンド</p>
+            <h3 class="sushi__title">Japanese Culinary Adventure</h3>
+            <p class="sushi__description">An abundant and colorful collection of Japan's finest, perfect for sharing or indulging in a diverse culinary experience.</p>
+
+            <ul class="trending__list flex-between">
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>A Platter of Maki & Hand-Pressed Sushi</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>Delicate Slices of Raw Salmon & Tuna</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>Comforting Bowls of Rice & Noodles</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/check.svg" alt="check">
+                    </div>
+                    <p>Golden Fried Shrimp & Flavorful Sauces</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/star.svg" alt="star">
+                    </div>
+                    <p>4.9</p>
+                </li>
+
+                <li>
+                    <div class="trending__icon flex-center">
+                        <img src="/assets/dollar-1-svgrepo-com.svg" alt="dollar-sign">
+                    </div>
+                    <p>$48.00</p>
+                </li>
+            </ul>
+            <div class="trending-content__buttons flex-center">
+                    <button class="trending-content__order-button">Order Now</button>
+            </div>
+        </div>
+
+    
+        </section>
+
+    </section> <!-- (Omitted repeating comments for brevity; they follow the same structure.) -->
+
+    <button id="backToTopBtn" title="Go to top">
+       <img src="/assets/back-to-top.png" alt="Back to Top">
+    </button> <!-- Back to top button -->
+
+
+    <footer class="footer flex-between"> <!-- Website footer -->
+        <h3 class="footer__logo"><span>Sushi</span>man</h3>
+
+        <ul class="footer__nav">
+
+            <li>
+            <a href="/html/index.html">Home</a>
+          </li>
+          <li>
+            <a href="/html/menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="/html/food.html">Food</a>
+          </li>
+          <li>
+            <a href="/html/about-us.html">About Us</a>
+          </li>
+          <li>
+            <a href="/html/services.html">Services</a>
+          </li>
+          
+          <li>
+ 
+        </ul>
+
+        <ul class="footer__social">
+            <li class="flex-center"><img src="/assets/facebook.svg" alt="facebook"></li>
+            <li class="flex-center"><img src="/assets/instagram.svg" alt="instagram"></li>
+            <li class="flex-center"><img src="/assets/twitter.svg" alt="twitter"></li>
+        </ul>
+    </footer>
+
+
+<!-- AOS JS for animations-->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- AOS Initialization and Custom Scripts -->
+<script>
+  AOS.init({
+    duration: 1000,
+    offset: 100,
+  });
+
+  const backToTopBtn = document.getElementById("backToTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+
+  backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  const navLinks = document.querySelectorAll(".header__menu li a");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+
+  // Highlight current page based on URL
+  const currentPath = window.location.pathname.split("/").pop();
+  navLinks.forEach(link => {
+    if (link.getAttribute("href").includes(currentPath)) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+
+</body>
+</html>

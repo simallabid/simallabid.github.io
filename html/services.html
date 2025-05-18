@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/image/sushi.png" />
+    <link rel="stylesheet" href="/css/style.css"> <!-- External CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" /> <!-- Animate On Scroll (AOS) Library CSS -->
+    <title>Sushiman</title>
+    
+</head>
+<body>
+    <header> <!-- Website Header -->
+      <nav class="header__nav">
+        <div class="header__logo">
+          <h4 data-aos="fade-down">Sushiman</h4>
+          <div class="header__logo-overlay"></div>
+        </div>
+
+        <ul class="header__menu" data-aos="fade-down">
+            <li>
+            <a href="/html/index.html">Home</a>
+          </li>
+          <li>
+            <a href="/html/menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="/html/food.html">Food</a>
+          </li>
+          <li>
+            <a href="/html/about-us.html">About Us</a>
+          </li>
+          <li>
+            <a href="/html/services.html">Services</a>
+          </li>
+          
+          <li>
+            <img src="/assets/search.svg" alt="search" />
+          </li>
+        </ul>
+
+        <ul class="header__menu-mobile" data-aos="fade-down">
+          <li>
+            <img src="/assets/menu.svg" alt="menu" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+   <section class="subscription flex-center"> <!-- Subscription Plans Section -->
+      <div class="service-foods__catalogue"  data-aos="fade-up">
+        <h2 data-aos="flip-down"> <!-- Section Title -->
+        Monthly Sushi Subscription
+      </h2>
+
+            <article class="service-foods__card" data-aos="fade-right"> <!-- Beginner Plan -->
+              <h4 class="service-foods__card-title">Beginner</h4>
+                <img class="service-foods__card-image" src="/assets/sushi-dish.png" alt="sushi-dish">
+                <h4 class="service-foods__card-title">4 Sushi Rolls <br>3 Nigiri <br>1 Appetizer</h4>
+                <h4 class="service-foods__card-title">$15/month</h4>
+                <div class="hero-content__buttons flex-center">
+                    <button class="hero-content__order-button">Subscribe Now</button>
+                </div>
+            </article>
+
+            <article class="service-foods__card" data-aos="fade-up"> <!-- Premium Plan -->
+              <h4 class="service-foods__card-title">Premium Chef's Pick</h4>
+                <img class="service-foods__card-image" src="/assets/sushi-dish-4.png" alt="sushi-dish-4">
+                <h4 class="service-foods__card-title">12 Nigiri <br>6 Sashimi <br>Noodles <br>3 Appetizers</h4>
+                <h4 class="service-foods__card-title">$45/month</h4>
+                <div class="hero-content__buttons flex-center">
+                    <button class="hero-content__order-button">Subscribe Now</button>
+                </div>
+            </article>
+
+            <article class="service-foods__card" data-aos="fade-left"> <!-- Sushi Lover Plan -->
+              <h4 class="service-foods__card-title">Sushi Lover</h4>
+                <img class="service-foods__card-image" src="/assets/sushi-dish-3.png" alt="sushi-dish-3">
+                <h4 class="service-foods__card-title">8 Nigiri <br>2 Gunkan <br>2 Appetizers</h4>
+                <h4 class="service-foods__card-title">$30/month</h4>
+                <div class="hero-content__buttons flex-center">
+                    <button class="hero-content__order-button">Subscribe Now</button>
+                </div>
+            </article>
+        </div>
+
+        <h2 data-aos="flip-down"> <!-- Reasons to Subscribe -->
+        Why Subscribe?
+      </h2>
+      <h4 class="service-foods__card-title" data-aos="fade-up">Free delivery on all orders <br>Exclusive limited edition items <br>Monthly surprise gift</h4>
+
+      <h2 data-aos="flip-down"> <!-- Newsletter Signup Section -->
+        Get offers stright <br />
+        to your inbox
+      </h2>
+      <p data-aos="fade-up">Sign up for the Sushiman newsletter</p>
+
+      <div class="subscription__form" data-aos="fade-up"> <!-- Newsletter Form -->
+        <input type="text" placeholder="Enter your email address"/>
+        <button>Get Started</button>
+      </div>
+    </section>
+
+    <button id="backToTopBtn" title="Go to top"> <!-- Back to Top Button -->
+       <img src="/assets/back-to-top.png" alt="Back to Top">
+    </button>
+
+
+
+    <footer class="footer flex-between"> <!-- Footer Navigation Links -->
+        <h3 class="footer__logo"><span>Sushi</span>man</h3>
+
+        <ul class="footer__nav">
+
+            <li>
+            <a href="/html/index.html">Home</a>
+          </li>
+          <li>
+            <a href="/html/menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="/html/food.html">Food</a>
+          </li>
+          <li>
+            <a href="/html/about-us.html">About Us</a>
+          </li>
+          <li>
+            <a href="/html/services.html">Services</a>
+          </li>
+          
+          <li>
+ 
+        </ul>
+
+        <ul class="footer__social">
+            <li class="flex-center"><img src="/assets/facebook.svg" alt="facebook"></li>
+            <li class="flex-center"><img src="/assets/instagram.svg" alt="instagram"></li>
+            <li class="flex-center"><img src="/assets/twitter.svg" alt="twitter"></li>
+        </ul>
+    </footer>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- AOS Initialization and Custom Scripts -->
+<script>
+  AOS.init({
+    duration: 1000,
+    offset: 100,
+  });
+
+  const backToTopBtn = document.getElementById("backToTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+
+  backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  const navLinks = document.querySelectorAll(".header__menu li a");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+
+  // Optional: Highlight current page based on URL
+  const currentPath = window.location.pathname.split("/").pop();
+  navLinks.forEach(link => {
+    if (link.getAttribute("href").includes(currentPath)) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+
+</body>
+</html>

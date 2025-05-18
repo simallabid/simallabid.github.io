@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/image/sushi.png" />
+    <link rel="stylesheet" href="/css/style.css"> <!-- Main CSS file -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" /> <!-- AOS (Animate on Scroll) CSS -->
+    <title>Sushiman</title>
+    
+</head>
+<body>
+    <header> <!-- Header with Navigation -->
+      <nav class="header__nav">
+        <div class="header__logo">
+          <h4 data-aos="fade-down">Sushiman</h4>
+          <div class="header__logo-overlay"></div>
+        </div>
+
+        <ul class="header__menu" data-aos="fade-down">
+          <li>
+            <a href="/html/index.html">Home</a>
+          </li>
+          <li>
+            <a href="/html/menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="/html/food.html">Food</a>
+          </li>
+          <li>
+            <a href="/html/about-us.html">About Us</a>
+          </li>
+          <li>
+            <a href="/html/services.html">Services</a>
+          </li>
+          
+          <li>
+            <img src="/assets/search.svg" alt="search" />
+          </li>
+        </ul>
+
+        <ul class="header__menu-mobile" data-aos="fade-down">
+          <li>
+            <img src="/assets/menu.svg" alt="menu" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="popular-foods"> <!-- Menu Section -->
+    <h2 class="popular-foods__title" data-aos="flip-up">Popular Food / 人気</h2>
+
+    <div class="popular-foods__filters sushi__hide-scrollbar" data-aos="fade-up"> <!-- Filter Buttons for Food Categories -->
+        <button class="popular-foods__filter-btn active">All</button>
+        <button class="popular-foods__filter-btn">
+            <img src="/assets/sushi-9.png" alt="sushi9"> Sushi
+        </button>
+        <button class="popular-foods__filter-btn">
+            <img src="/assets/sushi-8.png" alt="sushi8"> Ramen
+        </button>
+        <button class="popular-foods__filter-btn">
+            <img src="/assets/sushi-7.png" alt="sushi7"> Udon
+        </button>
+        <button class="popular-foods__filter-btn">
+            <img src="/assets/sushi-4.png" alt="Drinks"> Drinks
+        </button>
+        <button class="popular-foods__filter-btn">Others</button>
+    </div>
+
+    <div class="popular-foods__catalogue" data-aos="fade-up"> <!-- Catalogue of Food Cards -->
+        <article class="popular-foods__cards"> <!-- Each article below is a food card with image, name, rating, and price -->
+            <img class="popular-foods__cards-image" src="/assets/sushi-12.png" alt="sushi12">
+            <h4 class="popular-foods__cards-title">Chezu Sushi</h4>
+            <div class="popular-foods__cards-details flex-between">
+                <div class="popular-foods__cards-rating">
+                    <img src="/assets/star.svg" alt="star">
+                    <p>4.9</p>
+                </div>
+                <p class="popular-foods__cards-price">$21.00</p>
+            </div>
+        </article>
+
+        <article class="popular-foods__cards"><!-- More food cards (duplicated or unique same structure as above) -->
+            <img class="popular-foods__cards-image" src="/assets/sushi-11.png" alt="sushi11">
+            <h4 class="popular-foods__cards-title">Original Sushi</h4>
+            <div class="popular-foods__cards-details flex-between">
+                <div class="popular-foods__cards-rating">
+                    <img src="/assets/star.svg" alt="star">
+                    <p>5.0</p>
+                </div>
+                <p class="popular-foods__cards-price">$19.00</p>
+            </div>
+        </article>
+
+        <article class="popular-foods__cards"> <!-- More food cards (duplicated or unique same structure as above) -->
+            <img class="popular-foods__cards-image" src="/assets/sushi-10.png" alt="sushi10">
+            <h4 class="popular-foods__cards-title">Ramen Legendo</h4>
+            <div class="popular-foods__cards-details flex-between">
+                <div class="popular-foods__cards-rating">
+                    <img src="/assets/star.svg" alt="star">
+                    <p>4.7</p>
+                </div>
+                <p class="popular-foods__cards-price">$13.00</p>
+            </div>
+        </article>
+
+        <article class="popular-foods__cards"> <!-- More food cards (duplicated or unique same structure as above) -->
+            <img class="popular-foods__cards-image" src="/assets/roe-sushi.png" alt="roe-sushi">
+            <h4 class="popular-foods__cards-title">Roe Sushi</h4>
+            <div class="popular-foods__cards-details flex-between">
+                <div class="popular-foods__cards-rating">
+                    <img src="/assets/star.svg" alt="star">
+                    <p>4.4</p>
+                </div>
+                <p class="popular-foods__cards-price">$19.00</p>
+            </div>
+        </article>
+
+        <article class="popular-foods__cards"> <!-- More food cards (duplicated or unique same structure as above) -->
+            <img class="popular-foods__cards-image" src="/assets/maki-sushi.png" alt="maki-sushi">
+            <h4 class="popular-foods__cards-title">Maki Sushi</h4>
+            <div class="popular-foods__cards-details flex-between">
+                <div class="popular-foods__cards-rating">
+                    <img src="/assets/star.svg" alt="star">
+                    <p>4.2</p>
+                </div>
+                <p class="popular-foods__cards-price">$18.00</p>
+            </div>
+        </article>
+
+        <article class="popular-foods__cards"> <!-- More food cards (duplicated or unique same structure as above) -->
+            <img class="popular-foods__cards-image" src="/assets/sushi-7.png" alt="Udon">
+            <h4 class="popular-foods__cards-title">Beef Udon</h4>
+            <div class="popular-foods__cards-details flex-between">
+                <div class="popular-foods__cards-rating">
+                    <img src="/assets/star.svg" alt="star">
+                    <p>4.8</p>
+                </div>
+                <p class="popular-foods__cards-price">$15.00</p>
+            </div>
+        </article>
+
+        <article class="popular-foods__cards"> <!-- More food cards (duplicated or unique same structure as above) -->
+            <img class="popular-foods__cards-image" src="/assets/sushi-4.png" alt="tea">
+            <h4 class="popular-foods__cards-title">Sakura Tea</h4>
+            <div class="popular-foods__cards-details flex-between">
+                <div class="popular-foods__cards-rating">
+                    <img src="/assets/star.svg" alt="star">
+                    <p>4.9</p>
+                </div>
+                <p class="popular-foods__cards-price">$10.00</p>
+            </div>
+        </article>
+
+        <article class="popular-foods__cards"> <!-- More food cards (duplicated or unique same structure as above) -->
+            <img class="popular-foods__cards-image" src="/assets/macha.png" alt="matcha">
+            <h4 class="popular-foods__cards-title">Matcha Tea</h4>
+            <div class="popular-foods__cards-details flex-between">
+                <div class="popular-foods__cards-rating">
+                    <img src="/assets/star.svg" alt="star">
+                    <p>4.2</p>
+                </div>
+                <p class="popular-foods__cards-price">$15.00</p>
+            </div>
+        </article>
+
+        <article class="popular-foods__cards"> <!-- More food cards (duplicated or unique same structure as above) -->
+            <img class="popular-foods__cards-image" src="/assets/buble-tea.png" alt="Buble-tea">
+            <h4 class="popular-foods__cards-title">Buble Tea</h4>
+            <div class="popular-foods__cards-details flex-between">
+                <div class="popular-foods__cards-rating">
+                    <img src="/assets/star.svg" alt="star">
+                    <p>4.9</p>
+                </div>
+                <p class="popular-foods__cards-price">$20.00</p>
+            </div>
+        </article>
+    </div>
+
+
+</section>
+
+<button id="backToTopBtn" title="Go to top"> <!-- Back to Top Button -->
+       <img src="/assets/back-to-top.png" alt="Back to Top">
+    </button>
+
+    <footer class="footer flex-between"> <!-- Footer -->
+        <h3 class="footer__logo"><span>Sushi</span>man</h3>
+
+        <ul class="footer__nav">
+
+            <li>
+            <a href="/html/index.html">Home</a>
+          </li>
+          <li>
+            <a href="/html/menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="/html/food.html">Food</a>
+          </li>
+          <li>
+            <a href="/html/about-us.html">About Us</a>
+          </li>
+          <li>
+            <a href="/html/services.html">Services</a>
+          </li>
+          
+          <li>
+ 
+        </ul>
+
+        <ul class="footer__social">
+            <li class="flex-center"><img src="/assets/facebook.svg" alt="facebook"></li>
+            <li class="flex-center"><img src="/assets/instagram.svg" alt="instagram"></li>
+            <li class="flex-center"><img src="/assets/twitter.svg" alt="twitter"></li>
+        </ul>
+    </footer>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- AOS Initialization and Custom Scripts -->
+<script>
+  AOS.init({
+    duration: 1000,
+    offset: 100,
+  });
+
+  const backToTopBtn = document.getElementById("backToTopBtn");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  };
+
+  backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  const navLinks = document.querySelectorAll(".header__menu li a");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+
+  //Highlight current page based on URL
+  const currentPath = window.location.pathname.split("/").pop();
+  navLinks.forEach(link => {
+    if (link.getAttribute("href").includes(currentPath)) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+
+</body>
+</html>
+
